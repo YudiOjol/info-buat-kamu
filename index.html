@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toko Modern</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1 class="logo">Toko Modern</h1>
+</header>
+
+<section class="hero">
+    <h2>Belanja Cepat, Mudah & Praktis</h2>
+    <p>Pilih produk, klik, dan langsung masuk keranjang.</p>
+</section>
+
+<h2 class="title">Katalog Produk</h2>
+
+<div class="product-container">
+
+    <div class="product-card" onclick="addToCart('Bawang Merah', 20000, 40000)">
+        <img src="assets/images/produk1.jpg"/>
+        <div class="info">
+            <h3>Bawang Merah</h3>
+            <span>Rp 20.000 / pcs • Rp 40.000 / kg</span>
+        </div>
+    </div>
+
+    <div class="product-card" onclick="addToCart('Cabai Rawit', 15000, 30000)">
+        <img src="assets/images/produk2.jpg"/>
+        <div class="info">
+            <h3>Cabai Rawit</h3>
+            <span>Rp 15.000 / pcs • Rp 30.000 / kg</span>
+        </div>
+    </div>
+
+    <div class="product-card" onclick="addToCart('Kentang', 12000, 24000)">
+        <img src="assets/images/produk3.jpg"/>
+        <div class="info">
+            <h3>Kentang</h3>
+            <span>Rp 12.000 / pcs • Rp 24.000 / kg</span>
+        </div>
+    </div>
+
+</div>
+
+<div class="cart">
+    <h2>Keranjang Belanja</h2>
+    <div id="cart-items"></div>
+    <h3>Total: Rp <span id="total">0</span></h3>
+    <button class="wa-btn" onclick="checkoutWA()">Checkout via WhatsApp</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
